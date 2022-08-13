@@ -223,38 +223,81 @@ public class java4 {
         //     if (i > (p / 2)) System.out.println("素数です");
         //     else System.out.println("素数ではありません");
 
-        // 4-16
-            BufferedReader br16 = new BufferedReader(
-                new InputStreamReader( System.in ) );
-            System.out.println("数は ？");
-            int value = Integer.parseInt( br16.readLine() );
-            int i;
-            for (i = 2; value > 1; i++) {
-                while (value % i == 0) {
-                    System.out.println(i + " ");
-                    value /= i;
-                }
-            }
+        // // 4-16
+        //     BufferedReader br16 = new BufferedReader(
+        //         new InputStreamReader( System.in ) );
+        //     System.out.println("数は ？");
+        //     int value = Integer.parseInt( br16.readLine() );
+        //     int i;
+        //     for (i = 2; value > 1; i++) {
+        //         while (value % i == 0) {
+        //             System.out.println(i + " ");
+        //             value /= i;
+        //         }
+        //     }
 
 
         // 4-17
+        for (int i = 1; i <= 9; i++) {
+            for (int j = 1; j <= 9; j++) {
+                System.out.printf(" %2d",i * j);
+            }
+            System.out.println();
+        }
 
 
 
 
-        // 4-18
+        // // 4-18
+        // BufferedReader br17 = new BufferedReader(
+        //     new InputStreamReader( System.in ) );
+
+        // int enter = 1;
+        // int sum = 0;
+        // while (enter != 0) {
+
+        //     System.out.println("数は ？");
+        //     enter = Integer.parseInt( br17.readLine() );
+
+        //     sum += enter;
+        // }
+
+        // System.out.println("合計は" + sum);
 
 
 
 
+        // // 4-19
+        // BufferedReader br19 = new BufferedReader(
+        //     new InputStreamReader( System.in ) );
+            
+        // int enter = 1;
+        // int sum = 0;
+        // int counter = 0;
+        // while (enter != 0) {
 
-        // 4-19
+        //     System.out.println("数は ？");
+        //     enter = Integer.parseInt( br19.readLine() );
 
+        //     sum += enter;
 
+        //     counter ++;
+        // }
 
+        // System.out.println("平均は" + (sum / (counter - 1)));
 
-        // 4-20
+        // // 4-20
+        // BufferedReader br20 = new BufferedReader(
+        //     new InputStreamReader( System.in ) );
+        // System.out.println("数は ？");
+        // int size = Integer.parseInt( br20.readLine() );
 
+        // for (int i = 0; i < size; i++) {
+        //     for(int j = 0; j <= i; j++) {
+        //         System.out.print("$");
+        //     }
+        //     System.out.println();
+        // }
 
 
 
