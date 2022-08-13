@@ -1,5 +1,7 @@
 import java.io.*;
 
+import javax.sound.midi.SysexMessage;
+
 public class java4 {
     public static void main(String[] args) throws IOException {
         // 4-1
@@ -302,13 +304,34 @@ public class java4 {
 
 
         // 4-21
+        BufferedReader br21 = new BufferedReader(
+            new InputStreamReader( System.in ) );
+        System.out.println("数は ？");
+        int size = Integer.parseInt( br21.readLine() );
 
+        for (int i = 0; i < size; i++) {
+            for(int j = 0; j < size; j++) {
+                if (i == j || (size - 1 - i) == j) {
+                    System.out.print("X");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
 
 
 
         // 4-22
-
-
+        int fibo1 = 0;
+        int fibo2 = 1;
+        int fibo = fibo1 + fibo2;
+        while (fibo1 <= 1000) {
+            System.out.print(fibo1 + ",");
+            fibo1 = fibo2;
+            fibo2 = fibo;
+            fibo = fibo1 + fibo2;
+        }
 
 
 
