@@ -99,34 +99,74 @@ public class java5 {
         // }
 
 
-        // 5-6
-        // BufferedReader br6 = new BufferedReader(
+        // // 5-6
+        // // BufferedReader br6 = new BufferedReader(
+        // //     new InputStreamReader( System.in ) );
+        // int kuku[][] = new int[9][];
+
+        // // 配列 kuku に値を代入する
+        // for (int i = 0; i < 9; i++) {
+        //     kuku[i] = new int[9];
+        //     for (int j = 0; j < 9; j++) {
+        //         kuku[i][j] = (i + 1) * (j + 1);
+        //     }
+        // }
+
+        // for( int i = 0 ; i < 9 ; i++ ) {
+        //     for( int j = 0 ; j < 9 ; j++ ) {
+        //         System.out.printf( " %2d", kuku[i][j] );
+        //     }
+        //     System.out.println();
+        // }
+
+
+        // // 5-7
+        // BufferedReader br7 = new BufferedReader(
         //     new InputStreamReader( System.in ) );
-        int kuku[][] = new int[9][];
+        // int kuku[][] = new int[9][];
 
-        // 配列 kuku に値を代入する
-        for (int i = 0; i < 9; i++) {
-            kuku[i] = new int[9];
-            for (int j = 0; j < 9; j++) {
-                kuku[i][j] = (i + 1) * (j + 1);
-            }
-        }
+        // // 配列 kuku に値を代入する
+        // for (int i = 0; i < 9; i++) {
+        //     kuku[i] = new int[9];
+        //     for (int j = 0; j < 9; j++) {
+        //         kuku[i][j] = (i + 1) * (j + 1);
+        //     }
+        // }
 
-        for( int i = 0 ; i < 9 ; i++ )
-        {
-        for( int j = 0 ; j < 9 ; j++ )
-        System.out.printf( " %2d", kuku[i][j] );
+        // for( int i = 0 ; i < 9 ; i++ ) {
+        //     for( int j = 0 ; j < 9 ; j++ ) {
+        //         System.out.printf( " %2d", kuku[i][j] );
+        //     }
+        //     System.out.println();
+        // }
 
-        System.out.println();
-}
-
-
-        // 5-7
+        // int n = Integer.parseInt( br7.readLine() );
+        // int m = Integer.parseInt( br7.readLine() );
+        // System.out.println(kuku[n - 1][m - 1]);
 
 
         // 5-8
+        BufferedReader br8 = new BufferedReader(
+            new InputStreamReader( System.in ) );
+        int sort[] = new int[10];
 
+        for (int i = 0; i < 10; i++) {
+            sort[i] = Integer.parseInt( br8.readLine() );
+        }
 
+        for (int i = 0; i < 10; i++) {
+            for (int j = i + 1; j < 10; j++) {
+                if (sort[i] > sort[j]) {
+                    int t = sort[i];
+                    sort[i] = sort[j];
+                    sort[j] = t;
+                }
+            }
+        }
+
+        for( int i = 0 ; i < 10 ; i++ ) {
+            System.out.print( sort[i] + " " );
+        }
 
     }
 }
