@@ -1,1 +1,1 @@
-# M1JavaProject
+# JavaProject
